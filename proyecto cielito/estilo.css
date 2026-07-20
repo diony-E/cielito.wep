@@ -1,0 +1,787 @@
+/* =====================================
+        CONFIGURACIÓN GENERAL
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f8fcff;
+    color:#333;
+}
+
+/* Regla general para evitar desbordamiento de imágenes */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* =====================================
+        HEADER
+===================================== */
+
+header{
+    background:#003B73;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h1{
+    font-size:34px;
+    letter-spacing:4px;
+}
+
+.logo span{
+    color:#D4AF37;
+    font-size:14px;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#D4AF37;
+}
+
+/* =====================================
+        BANNER PRINCIPAL
+===================================== */
+
+.banner{
+    background: linear-gradient(135deg, #003B73, #006994);
+    padding:90px 8%;
+    color:white;
+}
+
+.contenido-banner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.texto-banner{
+    width:50%;
+}
+
+.etiqueta{
+    background:white;
+    color:#003B73;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+}
+
+.texto-banner h2{
+    margin-top:25px;
+    font-size:55px;
+    line-height:1.2;
+}
+
+.texto-banner h2 span{
+    color:#D4AF37;
+}
+
+.texto-banner p{
+    margin:25px 0;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.botones{
+    display:flex;
+    gap:20px;
+}
+
+/* BOTONES */
+
+.btn-azul,
+.btn-blanco{
+    padding:15px 35px;
+    border-radius:35px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+    display: inline-block;
+}
+
+.btn-azul{
+    background:#D4AF37;
+    color:#003B73;
+}
+
+.btn-azul:hover{
+    transform:translateY(-5px);
+}
+
+.btn-blanco{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-blanco:hover{
+    background:white;
+    color:#003B73;
+}
+
+.imagen-banner img{
+    width:430px;
+    filter: drop-shadow(0 25px 25px rgba(0,0,0,.35));
+}
+
+/* =====================================
+        PORTADAS (OTRAS PÁGINAS)
+===================================== */
+
+.portada, .portada-productos, .portada-promociones, .portada-contacto{
+    background: linear-gradient(135deg, #003B73, #006994);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.portada h1, .portada-productos h1, .portada-promociones h1, .portada-contacto h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.portada p, .portada-productos p, .portada-promociones p, .portada-contacto p{
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* =====================================
+        NOSOTROS (CORRECCIÓN IMAGEN)
+===================================== */
+
+.historia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 8%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.historia-imagen{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* AQUÍ SE CONTROLA EL TAMAÑO DEL BIDÓN */
+.historia-imagen img{
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,.15));
+}
+
+.historia-texto{
+    flex: 1;
+}
+
+.historia-texto h2{
+    color: #003B73;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.historia-texto p{
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.mision-vision{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 8%;
+    background: #eef8ff;
+    flex-wrap: wrap;
+}
+
+.mv{
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.mv h2{
+    color: #003B73;
+    margin-bottom: 15px;
+}
+
+.mv ul{
+    list-style-position: inside;
+    color: #555;
+}
+
+.equipo{
+    padding: 60px 8%;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.equipo h2{
+    color: #003B73;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* =====================================
+        BENEFICIOS
+===================================== */
+
+.beneficios{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.beneficios h2{
+    color:#003B73;
+    font-size:38px;
+}
+
+.subtitulo{
+    margin:15px 0 40px;
+    color:#666;
+}
+
+.contenedor-beneficios{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:280px;
+    padding:35px 25px;
+    border-radius:20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.icono{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#006994;
+    margin-bottom:15px;
+}
+
+/* =====================================
+        PRODUCTOS / CATÁLOGO
+===================================== */
+
+.productos, .catalogo{
+    padding:80px 8%;
+    text-align:center;
+    background:#eef8ff;
+}
+
+.productos h2{
+    color:#003B73;
+    font-size:38px;
+    margin-bottom:50px;
+}
+
+.contenedor-productos, .catalogo{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.producto{
+    width:320px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,.12);
+    transition:.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.producto:hover{
+    transform:translateY(-12px);
+}
+
+.producto img{
+    width:100%;
+    height:240px;
+    object-fit:contain;
+    padding: 15px;
+}
+
+.producto h2, .producto h3{
+    margin-top:15px;
+    color:#003B73;
+}
+
+.precio{
+    font-size:28px;
+    font-weight:bold;
+    color:#D4AF37;
+    margin:15px;
+}
+
+.producto button{
+    width:80%;
+    padding:14px;
+    margin: 0 auto;
+    border:none;
+    border-radius:30px;
+    background:#003B73;
+    color:white;
+    font-weight: 600;
+    cursor:pointer;
+    transition: .3s;
+}
+
+.producto button:hover{
+    background:#006994;
+}
+
+/* Ventajas / Pedido Especial */
+.ventajas, .beneficios-promociones{
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.contenedor-ventajas{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.ventaja, .beneficio{
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.05);
+}
+
+.ventaja h3, .beneficio h3{
+    color: #006994;
+    margin-bottom: 10px;
+}
+
+.pedido{
+    padding: 60px 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #003B73, #006994);
+    color: white;
+}
+
+.pedido h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.pedido p{
+    margin-bottom: 25px;
+}
+
+/* =====================================
+        PROMOCION / OFERTAS
+===================================== */
+
+.promocion{
+    padding:90px 8%;
+    text-align:center;
+    color:white;
+    background: linear-gradient(135deg, #006994, #003B73);
+}
+
+.promocion h2{
+    font-size:40px;
+}
+
+.promocion p{
+    margin:20px;
+}
+
+.ofertas{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 8%;
+    flex-wrap: wrap;
+}
+
+.oferta{
+    width: 320px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.oferta img{
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.oferta h2{
+    color: #003B73;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.oferta p{
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.promo-especial{
+    background: linear-gradient(135deg, #003B73, #006994);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin: 50px auto;
+    max-width: 1000px;
+    border-radius: 25px;
+}
+
+.promo-especial h2{
+    color: #D4AF37;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.promo-especial h3{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.promo-especial p{
+    margin-bottom: 25px;
+}
+
+/* =====================================
+        CONTACTO
+===================================== */
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 8%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.formulario{
+    flex: 1.2;
+    min-width: 300px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.formulario h2{
+    color: #003B73;
+    margin-bottom: 20px;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario input, .formulario textarea{
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+.formulario input:focus, .formulario textarea:focus{
+    border-color: #006994;
+}
+
+.formulario button{
+    padding: 14px;
+    border: none;
+    background: #003B73;
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.formulario button:hover{
+    background: #006994;
+}
+
+.informacion{
+    flex: 0.8;
+    min-width: 280px;
+    background: #eef8ff;
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.informacion h2{
+    color: #003B73;
+    margin-bottom: 20px;
+}
+
+.informacion p{
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.ubicacion{
+    text-align: center;
+    padding: 60px 8%;
+}
+
+.ubicacion h2{
+    color: #003B73;
+    margin-bottom: 10px;
+}
+
+.mapa img{
+    width: 100%;
+    max-width: 900px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+.redes-contacto{
+    background: #003B73;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.botones-redes{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botones-redes a{
+    background: white;
+    color: #003B73;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* =====================================
+        PREGUNTAS FRECUENTES
+===================================== */
+
+.preguntas{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.preguntas h2{
+    text-align: center;
+    color: #003B73;
+    margin-bottom: 30px;
+}
+
+.pregunta{
+    background: white;
+    border-left: 5px solid #006994;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+}
+
+.pregunta h3{
+    color: #003B73;
+    margin-bottom: 8px;
+}
+
+.pregunta p{
+    color: #666;
+}
+
+/* =====================================
+        BOTÓN WHATSAPP FLOTANTE
+===================================== */
+
+.whatsapp{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    transition: .3s;
+    z-index: 100;
+}
+
+.whatsapp:hover{
+    transform: scale(1.1);
+}
+
+/* =====================================
+        FOOTER
+===================================== */
+
+footer{
+    background:#001f3d;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+footer h2{
+    font-size:35px;
+}
+
+.redes{
+    margin:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.redes a{
+    background:#006994;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+}
+
+.copy{
+    color:#aaa;
+}
+
+/* =====================================
+        RESPONSIVE
+===================================== */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.contenido-banner{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.texto-banner{
+    width:100%;
+}
+
+.texto-banner h2{
+    font-size:40px;
+}
+
+.botones{
+    justify-content:center;
+}
+
+.imagen-banner img{
+    width:320px;
+}
+
+.historia{
+    flex-direction: column;
+    text-align: center;
+}
+
+}
+
+@media(max-width:500px){
+
+.logo h1{
+    font-size:28px;
+}
+
+nav a{
+    font-size:13px;
+}
+
+.texto-banner h2{
+    font-size:32px;
+}
+
+.producto{
+    width:95%;
+}
+
+.promocion h2{
+    font-size:28px;
+}
+
+}
